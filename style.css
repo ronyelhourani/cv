@@ -1,119 +1,25 @@
-/* Fonts */
-
-/* Family */
-h1 {
-  font-family: "Julius Sans One", sans-serif;
+/*      ---------------------   CSS RESET ------------------------    */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  /* Contact, Skills, Education, About me, Work Experience */
-  font-family: "Archivo Narrow", sans-serif;
+:root {
+  /* bg-color */
+  --body-bg-color: rgb(204, 204, 204);
+  --page-bg-color: white;
+  --leftPanel-bg-color: #484444;
+
+  /* Color */
+  --h1-text-color: #111;
+  --leftPanel-text-color: #bebebe;
+  --leftPanel-h2-color: white;
 }
 
-h3 {
-  /* Accountant */
-  font-family: "Open Sans", sans-serif;
-}
-
-.jobPosition span,
-.projectName span {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.upperCase {
-  text-transform: uppercase;
-}
-
-.smallText,
-.smallText span,
-.smallText p,
-.smallText a {
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: justify;
-}
-
-/* End Family */
-
-/* Colors */
-h1 {
-  color: #111;
-}
-
-.leftPanel,
-.leftPanel a {
-  color: #bebebe;
-  text-decoration: none;
-}
-
-.leftPanel h2 {
-  color: white;
-}
-
-/* End Colors */
-
-/* Sizes */
-h1 {
-  font-weight: 300;
-  font-size: 1.2cm;
-  transform: scale(1, 1.15);
-  margin-bottom: 0.2cm;
-  margin-top: 0.2cm;
-  text-transform: uppercase;
-}
-
-h2 {
-  margin-top: 0.1cm;
-  margin-bottom: 0.1cm;
-}
-
-.leftPanel,
-.leftPanel a {
-  font-size: 0.38cm;
-}
-
-.projectName span,
-.jobPosition span {
-  font-size: 0.35cm;
-}
-
-.smallText,
-.smallText span,
-.smallText p,
-.smallText a {
-  font-size: 0.35cm;
-}
-
-.leftPanel .smallText,
-.leftPanel .smallText,
-.leftPanel .smallText span,
-.leftPanel .smallText p,
-.smallText a {
-  font-size: 0.45cm;
-}
-
-.contactIcon {
-  width: 0.5cm;
-  text-align: center;
-}
-
-p {
-  margin-top: 0.05cm;
-  margin-bottom: 0.05cm;
-}
-/* End Sizes */
-
-.bolded {
-  font-weight: bold;
-}
-
-.white {
-  color: white;
-}
-/* End Fonts */
-
-/* Layout */
+/*    -----------------------   ELEMENTS -------------------------     */
 body {
-  background: rgb(204, 204, 204);
+  background: var(--body-bg-color);
   width: 21cm;
   height: 29.7cm;
   margin: 0 auto;
@@ -121,7 +27,7 @@ body {
 
 /* Printing */
 page {
-  background: white;
+  background: var(--page-bg-color);
   display: block;
   margin: 0 auto;
   margin-bottom: 0.5cm;
@@ -148,20 +54,65 @@ page[size="A4"] {
   height: 100%;
 }
 
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  color: var(--h1-text-color);
+  font-weight: 300;
+  font-size: 1.2cm;
+  transform: scale(1, 1.15);
+  margin-bottom: 0.2cm;
+  margin-top: 0.2cm;
+  text-transform: uppercase;
+}
+
+h2 {
+  /* Contact, Skills, Education, About me, Work Experience */
+  font-family: "Archivo Narrow", sans-serif;
+  margin-top: 0.1cm;
+  margin-bottom: 0.1cm;
+}
+
+h3 {
+  /* Accountant */
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin-top: 0.05cm;
+  margin-bottom: 0.05cm;
+}
+
+/* ----------------   LEFTPANEL   --------------------------       */
+/* Class leftPanel */
 .leftPanel {
   width: 27%;
-  background-color: #484444;
+  background-color: var(--leftPanel-bg-color);
   padding: 0.7cm;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.rightPanel {
-  width: 73%;
-  padding: 0.7cm;
+.leftPanel,
+.leftPanel a {
+  color: var(--leftPanel-text-color);
+  text-decoration: none;
+  font-size: 0.38cm;
 }
 
+.leftPanel h2 {
+  color: var(--leftPanel-h2-color);
+}
+
+.leftPanel .smallText,
+.leftPanel .smallText,
+.leftPanel .smallText span,
+.leftPanel .smallText p,
+.smallText a {
+  font-size: 0.45cm;
+}
+
+/* Part 1 of leftPanel: Avatar */
 .leftPanel img {
   width: 4cm;
   height: 4cm;
@@ -172,12 +123,24 @@ page[size="A4"] {
   object-position: 50% 50%;
 }
 
+/* Part 2 of leftPanel: Details */
 .leftPanel .details {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+/* Part 1 of details: Contact */
+.contactIcon {
+  width: 0.5cm;
+  text-align: center;
+}
+
+.lastParagrafNoMarginBottom {
+  margin-bottom: 0;
+}
+
+/* Part 2 of details: Skill */
 .skill {
   display: flex;
   flex-direction: row;
@@ -206,6 +169,20 @@ page[size="A4"] {
   margin-right: 0.1cm;
 }
 
+/* Part 3 of details: Education */
+.white {
+  color: white;
+}
+
+/*    ------------------    RIGHTPANEL    ----------------------       */
+/* Class RightPanel */
+.rightPanel {
+  width: 73%;
+  padding: 0.7cm;
+}
+
+/* Part 3 of rightPanel: Experience */
+/* Class  workExperience*/
 .workExperience > ul {
   list-style-type: none;
   padding-left: 0;
@@ -218,6 +195,7 @@ page[size="A4"] {
   padding-left: 0.5cm;
 }
 
+/* The vertical line at the left of the experiences */
 .workExperience > ul > li:before {
   background-color: #b8abab;
   width: 0.05cm;
@@ -228,6 +206,7 @@ page[size="A4"] {
   left: 0.05cm;
 }
 
+/* The small circle at the left of each experience title */
 .workExperience > ul > li::after {
   content: "";
   position: absolute;
@@ -240,10 +219,45 @@ page[size="A4"] {
   height: 0.35cm;
 }
 
+.workExperience > ul > li ul {
+  padding-left: 0.5cm;
+  list-style-type: disc;
+}
+
+/* Class jobPosition*/
 .jobPosition {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.jobPosition span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.35cm;
+}
+
+/* Class projectName*/
+.projectName span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.35cm;
+}
+
+/*    ------------------    ELEMENTS USED IN BOTH LEFTPANEL AND RIGHTPANEL    --------------------      */
+.smallText,
+.smallText span,
+.smallText p,
+.smallText a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: justify;
+  font-size: 0.35cm;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.upperCase {
+  text-transform: uppercase;
 }
 
 .item {
@@ -254,13 +268,3 @@ page[size="A4"] {
 .item h2 {
   margin-top: 0;
 }
-
-.lastParagrafNoMarginBottom {
-  margin-bottom: 0;
-}
-
-.workExperience > ul > li ul {
-  padding-left: 0.5cm;
-  list-style-type: disc;
-}
-/*End Layout*/
