@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- The first page -->
     <page size="A4">
       <!-- The page is divided into two parts: 1) The left side with class "leftPanel", 2) The right side with class "rightPanel"  -->
       <div class="container">
@@ -27,10 +28,8 @@
             <!-- Details is divided into 3 parts: 1) Contact, 2) Skills, 3) Education -->
             <!-- 1) Contact -->
             <div class="details-subgroup">
-              <h2 class="leftPanel-subgroup">CONTACT</h2>
-              <div
-                class="text-and-icons-list leftPanel-subgroup-content smallText"
-              >
+              <h2 class="subgroup-title">CONTACT</h2>
+              <div class="text-and-icons-list subgroup-content">
                 <span class="text-and-icon"
                   ><i class="fa fa-phone contactIcon" aria-hidden="true"></i>
                   <p>(+961) 03 250 693</p>
@@ -60,8 +59,8 @@
             </div>
             <!-- 2) Skills -->
             <div class="details-subgroup">
-              <h2 class="leftPanel-subgroup">SKILLS</h2>
-              <ul class="leftPanel-subgroup-content skills smallText">
+              <h2 class="subgroup-title">SKILLS</h2>
+              <ul class="subgroup-content skills">
                 <li>Cypress</li>
                 <li>JMeter</li>
                 <li>Swagger</li>
@@ -77,8 +76,8 @@
             </div>
             <!-- 3) Education -->
             <div class="details-subgroup">
-              <h2 class="leftPanel-subgroup">EDUCATION</h2>
-              <div class="leftPanel-subgroup-content smallText">
+              <h2 class="subgroup-title">EDUCATION</h2>
+              <div class="subgroup-content">
                 <p>
                   ISTQB® Certified Tester Foundation Level 4.0 certification
                 </p>
@@ -90,166 +89,194 @@
         <div class="rightPanel">
           <!-- Div with class "rightPanel" is divided into 3 parts: 1) Intro, 2) About me, 3) Experience -->
           <!-- 1) Intro -->
-          <div>
-            <h1>Jhon Doe</h1>
-            <div class="smallText">
-              <h3>Accountant</h3>
+          <div class="intro-container">
+            <div class="intro-content">
+              <h1 class="name">Rony El Hourani</h1>
+              <div class="line"></div>
+              <p class="profession">QA engineer</p>
             </div>
           </div>
-          <!-- 2) About me -->
+          <!-- RigthPanel details -->
           <div>
-            <h2>About me</h2>
-            <div class="smallText">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                venenatis, justo sed feugiat pulvinar., quam ipsum tincidunt
-                enim, ac gravida est metus sit amet neque. Curabitur ut arcu ut
-                nunc finibus accumsan id id elit.
-              </p>
-              <p>Vivamus non magna quis neque viverra finibus quis a tortor.</p>
+            <!-- Summary is divided into 2 parts: 1) Title, 2) Content -->
+            <!-- 1) Summary -->
+            <div>
+              <!-- Title -->
+              <h2 class="subgroup-title">SUMMARY</h2>
+              <!-- Content -->
+              <ul class="subgroup-content details-list">
+                <li>
+                  - Self-independent, reliable adn friendly individual who works
+                  to achive his goals.
+                </li>
+                <li>
+                  - Adaptable quickly, and organized well. Interested in
+                  learning the latest web and software technologies quickly.
+                </li>
+                <li>
+                  - Able to work well in teams as well as individually. My
+                  futture goal is to become a senior full-stack developer.
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- 3) Experience -->
-          <div class="workExperience">
-            <!-- The Div with class "workExperience" is divided into 2 parts: 1) Title, 2) List of experiences -->
-            <!-- 1) Title -->
-            <h2>Work experience</h2>
-            <!-- 2) List of experiences -->
-            <ul>
-              <!-- Experience -->
-              <li>
-                <!-- Experience is divided into 3 parts: 1) Title & date, 2) Position & company name, 3) Description of job -->
-                <!-- 1) Title & date  -->
-                <div class="jobPosition">
-                  <span class="bolded"> Accountant </span>
-                  <span> Jun 2014 - Sept 2015 </span>
-                </div>
-                <!-- 2) Position & company name -->
-                <div class="projectName bolded">
-                  <span> Accounting project name | Company name </span>
-                </div>
-                <!-- 3) Description of job -->
-                <div class="smallText">
-                  <p>
-                    Quisque rutrum mollis ornare. In pharetra diam libero, non
-                    interdum dui imperdiet quis. Quisque aliquam sapien in
-                    libero finibus sodales. Mauris id commodo metus. In in
-                    laoreet dolor.
-                  </p>
-                  <ul>
-                    <li>
-                      Integer commodo ullamcorper mauris, id condimentum lorem
-                      elementum sed. Etiam rutrum eu elit ut hendrerit.
-                      Vestibulum congue sem ac auctor semper. Aenean quis
-                      imperdiet magna. Sed eget ullamcorper enim. Vestibulum
-                      consequat turpis eu neque efficitur blandit sed sit amet
-                      neque. Curabitur congue semper erat nec blandit.
-                    </li>
-                  </ul>
-                  <p>
-                    <span class="bolded">Skills: </span>Accounting, Word,
-                    Powerpoint
-                  </p>
-                </div>
-              </li>
-              <!-- Experience -->
-              <li>
-                <!-- Experience is divided into 3 parts: 1) Title & date, 2) Position & company name, 3) Description of job -->
-                <!-- 1) Title & date  -->
-                <div class="jobPosition">
-                  <span class="bolded"> Digital Marketing Expert </span>
-                  <span> Nov 2020 - Sept 2021 </span>
-                </div>
-                <!-- 2) Position & company name -->
-                <div class="projectName bolded">
-                  <span> Project name | Company name </span>
-                </div>
-                <!-- 3) Description of job -->
-                <div class="smallText">
-                  <p>
-                    Morbi rhoncus, tortor vel luctus tincidunt, sapien lacus
-                    vehicula augue, vitae ultrices eros diam eget mauris.
-                    Aliquam dictum nulla vel augue tristique bibendum.
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas.
-                  </p>
-                  <ul>
-                    <li>
-                      <p>
-                        Phasellus ac accumsan ligula. Morbi quam massa,
-                        pellentesque nec nunc nec, consectetur gravida dolor.
-                        Mauris vulputate sagittis pellentesque. Donec luctus
-                        lorem luctus purus condimentum, id ultrices lacus
-                        aliquam.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Quisque et lorem sagittis lacus lobortis euismod non id
-                        mi. Nulla sed tincidunt libero, placerat imperdiet
-                        magna. Quisque lectus quam, viverra eu congue ut, congue
-                        vitae metus. Sed in varius sapien. Cras et elementum
-                        tellus.
-                      </p>
-                    </li>
-                  </ul>
-                  <p><span class="bolded">Skills: </span> Writing, Photoshop</p>
-                </div>
-              </li>
-              <!-- Experience -->
-              <li>
-                <!-- Experience is divided into 3 parts: 1) Title & date, 2) Position & company name, 3) Description of job -->
-                <!-- 1) Title & date  -->
-                <div class="jobPosition">
-                  <span class="bolded"> Accountant </span>
-                  <span> Jun 2017 - May 2020 </span>
-                </div>
-                <!-- 2) Position & company name -->
-                <div class="projectName bolded">
-                  <span> Project name | Company name </span>
-                </div>
-                <!-- 3) Description of job -->
-                <div class="smallText">
-                  <p>
-                    Maecenas eget semper sapien. Sed convallis nunc egestas dui
-                    convallis dictum id nec metus. Donec vestibulum justo
-                    mauris, ac congue lacus tincidunt id. Vivamus rhoncus risus
-                    ac ex varius gravida. Donec eget ullamcorper ipsum.
-                  </p>
 
-                  <ul>
-                    <li>
-                      <p>
-                        Maecenas auctor euismod felis vel semper. Nulla
-                        facilisi. Quisque quis odio dui. Morbi venenatis magna
-                        quis libero mollis facilisis. Ut semper, eros eu dictum
-                        efficitur, ligula felis aliquet ante, sed commodo odio
-                        nisi a augue.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Curabitur at interdum nunc, nec sodales nulla. Nulla
-                        facilisi. Nam egestas risus sed maximus feugiat. Sed
-                        semper arcu ac dui consectetur consectetur. Nulla
-                        dignissim nec turpis id rhoncus. In hac habitasse platea
-                        dictumst.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Nunc iaculis mauris nec viverra placerat. Vestibulum
-                        ante ipsum primis in faucibus orci luctus et ultrices
-                        posuere cubilia curae; Aliquam erat volutpat. Vivamus
-                        sed ex et magna volutpat sodales et sed odio.
-                      </p>
-                    </li>
-                  </ul>
-                  <p><span class="bolded">Skills: </span>Management, French</p>
-                </div>
+          <!-- Services is divided into 2 parts: 1) Title, 2) Content -->
+          <!-- 2) Services -->
+          <div>
+            <!-- Title -->
+            <h2 class="subgroup-title">SERVICES</h2>
+            <!-- Content -->
+            <ul class="subgroup-content details-list">
+              <li>
+                - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris venenatis, justo sed feugiat pulvinar.
+              </li>
+              <li>
+                - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris venenatis, justo sed feugiat pulvinar.
+              </li>
+              <li>
+                - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris venenatis, justo sed feugiat pulvinar.
               </li>
             </ul>
           </div>
+
+          <!-- Portfolio is divided into 2 parts: 1) Title, 2) Content -->
+          <!-- 3) Portfolio -->
+          <div>
+            <!-- Title -->
+            <h2 class="subgroup-title">PORTFOLIO</h2>
+            <!-- Content -->
+            <ul class="subgroup-content details-list">
+              <li>
+                - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris venenatis, justo sed feugiat pulvinar.
+              </li>
+              <li>
+                - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris venenatis, justo sed feugiat pulvinar.
+              </li>
+              <li>
+                - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris venenatis, justo sed feugiat pulvinar.
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4) Previous Experience -->
+          <div>
+            <!-- Previous Experience is divided into 2 parts: 1) Title, 2) Content -->
+            <!-- Title -->
+            <h2 class="subgroup-title">PREVIOUS EXPERIENCE</h2>
+            <!-- Content -->
+            <ul class="subgroup-content">
+              <li class="subgroup-content">
+                <div class="position-and-date">
+                  <span class="position"
+                    >Transfer department | Bank of Beirut</span
+                  >
+                  <span class="date">May 2017 - July 2023</span>
+                </div>
+                <ul class="details-list">
+                  <li>
+                    - Working in a team responsible for sending and receiving
+                    incomings, outgoings and commissions.
+                  </li>
+                  <li>
+                    - Analyzing cases of fraud and suspicious transactions by
+                    coordinating with the branches, compliance department,
+                    treasury department and audit department.
+                  </li>
+                  <li>
+                    - Coordinating with local and foreign banks in order to keep
+                    examining the status of the transfers and exchanging
+                    commissions.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </page>
+    <!-- The second page -->
+    <page size="A4">
+      <div class="container">
+        <div class="leftPanel"></div>
+        <div class="rightPanel">
+          <ul class="subgroup-content">
+            <li class="subgroup-content">
+              <div class="position-and-date">
+                <span class="position">Statistician | Bank of Beirut</span>
+                <span class="date">Dec 2016 - May 2017</span>
+              </div>
+              <ul class="details-list">
+                <li>
+                  - Compiling financial data from branches and other
+                  departments.
+                </li>
+                <li>- Consolidating and calculating financial data.</li>
+                <li>- Sending daily reports to the Lebanese Central Bank.</li>
+                <li>
+                  - Peer review of every report done by the Statistics
+                  departments.
+                </li>
+              </ul>
+            </li>
+
+            <li class="subgroup-content">
+              <div class="position-and-date">
+                <span class="position">Bank teller | Bank of Beirut</span>
+                <span class="date">April 2016 - Dec 2016</span>
+              </div>
+              <ul class="details-list">
+                <li>
+                  - Communicating, understanding and solving the costumer’s
+                  needs and concern.
+                </li>
+                <li>
+                  - Giving customer service and selling financial products and
+                  other services to the clients.
+                </li>
+              </ul>
+            </li>
+
+            <li class="subgroup-content">
+              <div class="position-and-date">
+                <span class="position">Credit analyst | Bank of Beirut</span>
+                <span class="date">April 2015 - April 2016</span>
+              </div>
+              <ul class="details-list">
+                <li>
+                  - Analyzing investments and potential risk of debtors (firms
+                  and individuals) to determine the interest rate and the limit
+                  of an affordable loan given to the client
+                </li>
+              </ul>
+            </li>
+
+            <li class="subgroup-content">
+              <div class="position-and-date">
+                <span class="position">Creditbank</span>
+                <span class="date">Sep 2014 – Oct 2014</span>
+              </div>
+              <ul class="details-list">
+                <li>
+                  - Part of the temporary Foreign Account Tax Compliance (FATCA)
+                  project
+                </li>
+                <li>
+                  - Calling bank’s customers with US citizenship to sign papers
+                  that will require them to report foreign assets or any foreign
+                  account holdings outside the USA, for them not to avoid U.S
+                  taxation.
+                </li>
+                <li>- Soliciting US Citizens to report foreign assets</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </page>

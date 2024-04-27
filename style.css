@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: arial, sans-serif;
+  font-size: 0.37cm;
 }
 
 :root {
@@ -10,11 +12,13 @@
   --body-bg-color: rgb(204, 204, 204);
   --page-bg-color: white;
   --leftPanel-bg-color: rgb(0, 92, 133);
+  --rightPanel-intro-bg-color: rgb(245, 245, 245);
 
   /* Color */
   --h1-text-color: #111;
   --leftPanel-text-color: white;
   --leftPanel-h2-color: white;
+  --rightPanel-h2-color: rgb(0, 92, 133);
 }
 
 /*    -----------------------   ELEMENTS -------------------------     */
@@ -55,95 +59,111 @@ page[size="A4"] {
 }
 
 h1 {
-  font-family: "Julius Sans One", sans-serif;
   color: var(--h1-text-color);
-  font-weight: 300;
-  font-size: 1.2cm;
-  transform: scale(1, 1.15);
-  margin-bottom: 0.2cm;
-  margin-top: 0.2cm;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1cm;
 }
 
 h2 {
-  /* Contact, Skills, Education, About me, Work Experience */
-  font-family: "Archivo Narrow", sans-serif;
   margin-top: 0.1cm;
   margin-bottom: 0.1cm;
-}
-
-h3 {
-  /* Accountant */
-  font-family: "Open Sans", sans-serif;
+  font-size: 0.5cm;
 }
 
 p {
   margin-top: 0.05cm;
   margin-bottom: 0.05cm;
+  line-height: 1.5;
 }
 
 ul {
   list-style: none;
 }
 
+li {
+  padding-bottom: 0.1cm;
+  line-height: 1.5;
+}
 /* --------------------   COMPONENTS    --------------------------     */
-/* COMPONENT: Text-and-icons */
+/* Component 1: text-and-icons-list */
 .text-and-icons-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 6px;
-  column-gap: 12px;
+  row-gap: 0.16cm;
+  column-gap: 0.32cm;
 }
 
-/* COMPONENT: text-and-icon */
+/* Component 2: text-and-icon */
 .text-and-icon {
   display: inline-flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 0.16cm;
   position: relative;
+}
+
+/* Component 3: subgroup-title */
+.subgroup-title {
+  font-weight: 700;
+  letter-spacing: 0.03cm;
+  position: relative;
+  display: inline-block;
+}
+
+.subgroup-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.132cm;
+  width: 100%;
+}
+
+/* Component 4: subgroup-content */
+.subgroup-content {
+  padding-top: 0.265cm;
+  padding-bottom: 0.529cm;
+}
+
+/* Component 5: details-list */
+.details-list {
+  padding-left: 0.265cm;
+}
+
+/* Component 6: position-and-date */
+.position-and-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.265cm;
+}
+
+.position {
+  font-weight: bold;
+}
+
+.date {
+  color: var(--rightPanel-h2-color);
+  font-weight: bold;
 }
 
 /* ----------------   LEFTPANEL   --------------------------       */
 /* Class leftPanel */
 .leftPanel {
-  width: 35%;
+  width: 36%;
   background-color: var(--leftPanel-bg-color);
   padding: 0.7cm;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--leftPanel-text-color);
-  font-size: 0.38cm;
 }
 
-.leftPanel .leftPanel-subgroup {
+.leftPanel .subgroup-title {
   color: var(--leftPanel-h2-color);
-  font-weight: 500;
-  letter-spacing: 0.05cm;
-  position: relative;
-  display: inline-block;
 }
 
-.leftPanel .leftPanel-subgroup::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
+.leftPanel .subgroup-title::after {
   border-bottom: 1px solid var(--leftPanel-h2-color);
-}
-
-.leftPanel .leftPanel-subgroup-content {
-  padding-top: 20px;
-}
-
-.leftPanel .smallText,
-.leftPanel .smallText,
-.leftPanel .smallText span,
-.leftPanel .smallText p,
-.smallText a {
-  font-size: 0.37cm;
 }
 
 /* Part 1 of leftPanel: Avatar */
@@ -162,11 +182,8 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.leftPanel .details-subgroup {
-  padding-bottom: 0.7cm;
   padding-top: 0.7cm;
+  gap: 0.7cm;
 }
 
 /* Part 1 of details: Contact */
@@ -181,88 +198,47 @@ ul {
   gap: 0.2cm;
 }
 
+.leftPanel .skills li {
+  line-height: 1;
+}
+
 /*    ------------------    RIGHTPANEL    ----------------------       */
 /* Class RightPanel */
 .rightPanel {
-  width: 73%;
+  width: 75%;
   padding: 0.7cm;
 }
 
-/* Part 3 of rightPanel: Experience */
-/* Class  workExperience*/
-.workExperience > ul {
-  list-style-type: none;
-  padding-left: 0;
+/* Part 1 of rightPanel: Intro-container */
+.intro-container {
+  padding-bottom: 0.529cm;
 }
 
-.workExperience > ul > li {
-  position: relative;
-  margin: 0;
-  padding-bottom: 0.5cm;
-  padding-left: 0.5cm;
-}
-
-/* The vertical line at the left of the experiences */
-.workExperience > ul > li:before {
-  background-color: #b8abab;
-  width: 0.05cm;
-  content: "";
-  position: absolute;
-  top: 0.1cm;
-  bottom: -0.2cm; /* change this after border removal */
-  left: 0.05cm;
-}
-
-/* The small circle at the left of each experience title */
-.workExperience > ul > li::after {
-  content: "";
-  position: absolute;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23484444' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: -0.09cm;
-  top: 0;
-  width: 0.35cm;
-  height: 0.35cm;
-}
-
-.workExperience > ul > li ul {
-  padding-left: 0.5cm;
-  list-style-type: disc;
-}
-
-/* Class jobPosition*/
-.jobPosition {
+.intro-content {
+  background-color: var(--rightPanel-intro-bg-color);
+  padding: 0.529cm;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
-.jobPosition span {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.35cm;
+.line {
+  width: 30%;
+  height: 0.053cm;
+  background-color: black;
+  margin: 0.529cm auto;
 }
 
-/* Class projectName*/
-.projectName span {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.35cm;
+.profession {
+  font-size: 0.55cm;
 }
 
-/*    ------------------    ELEMENTS USED IN BOTH LEFTPANEL AND RIGHTPANEL    --------------------      */
-.smallText,
-.smallText span,
-.smallText p,
-.smallText a {
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: justify;
-  font-size: 0.35cm;
+/* Part 2 of rightPanel: Details */
+.rightPanel .subgroup-title {
+  color: var(--rightPanel-h2-color);
 }
 
-.bolded {
-  font-weight: bold;
-}
-
-.upperCase {
-  text-transform: uppercase;
+.rightPanel .subgroup-title::after {
+  border-bottom: 1px solid var(--rightPanel-h2-color);
 }
