@@ -90,14 +90,14 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 0.16cm;
+  row-gap: 0.25cm;
   column-gap: 0.32cm;
 }
 
 /* Component 2: text-and-icon */
 .text-and-icon {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.16cm;
   position: relative;
 }
@@ -146,10 +146,15 @@ li {
   font-weight: bold;
 }
 
+.logo-image {
+  max-width: 0.5cm;
+  font-size: 0.5cm;
+}
+
 /* ----------------   LEFTPANEL   --------------------------       */
 /* Class leftPanel */
 .leftPanel {
-  width: 36%;
+  width: 35%;
   background-color: var(--leftPanel-bg-color);
   padding: 0.7cm;
   display: flex;
@@ -167,7 +172,7 @@ li {
 }
 
 /* Part 1 of leftPanel: Avatar */
-.leftPanel img {
+.leftPanel .avatar {
   width: 4cm;
   height: 4cm;
   margin-bottom: 0.7cm;
@@ -191,21 +196,10 @@ li {
   width: 0.5cm;
 }
 
-/* Part 2 of details: Skills */
-.leftPanel .skills {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2cm;
-}
-
-.leftPanel .skills li {
-  line-height: 1;
-}
-
 /*    ------------------    RIGHTPANEL    ----------------------       */
 /* Class RightPanel */
 .rightPanel {
-  width: 75%;
+  width: 65%;
   padding: 0.7cm;
 }
 

@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,7 +18,7 @@
         <div class="leftPanel">
           <!-- Div with class "leftPanel" is divided into 2 parts: 1) Avatar, 2) Details -->
           <!-- 1) Avatar -->
-          <img src="images/avatar.png" />
+          <img class="avatar" src="images/avatar.png" />
           <!-- 2) Details -->
           <div class="details">
             <!-- Details is divided into 3 parts: 1) Contact, 2) Skills, 3) Education -->
@@ -31,36 +27,49 @@
               <h2 class="subgroup-title">CONTACT</h2>
               <div class="text-and-icons-list subgroup-content">
                 <span class="text-and-icon"
-                  ><i class="fa fa-phone contactIcon" aria-hidden="true"></i>
-                  <p>(+961) 03 250 693</p>
-                </span>
-
-                <span class="text-and-icon"
-                  ><i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
+                  ><span class="material-symbols-outlined logo-image">
+                    mail
+                  </span>
                   <p>ronyhourani@gmail.com</p>
                 </span>
 
                 <span class="text-and-icon"
-                  ><i
-                    class="fa fa-map-marker contactIcon"
-                    aria-hidden="true"
-                  ></i>
-                  <p>Beirut, Lebanon</p>
+                  ><img
+                    src="images/logo-contact/linkedin-logo.png"
+                    alt="LinkedIn profile"
+                    class="logo-image"
+                  />
+                  <p>linkedin.com/in/rony-el-hourani</p>
                 </span>
 
                 <span class="text-and-icon"
-                  ><i
-                    class="fa fa-linkedin-square contactIcon"
-                    aria-hidden="true"
-                  ></i>
-                  <p>linkedin.com/in/rony-el-hourani</p>
+                  ><span class="material-symbols-outlined logo-image">
+                    language
+                  </span>
+                  <p>ronyelhourani.github.io/portfolio</p>
+                </span>
+
+                <span class="text-and-icon"
+                  ><img
+                    src="images/logo-contact/github-logo.png"
+                    alt="Github"
+                    class="logo-image"
+                  />
+                  <p>github.com/ronyelhourani</p>
+                </span>
+
+                <span class="text-and-icon"
+                  ><span class="material-symbols-outlined logo-image">
+                    location_on
+                  </span>
+                  <p>Beyrouth, Liban</p>
                 </span>
               </div>
             </div>
             <!-- 2) Skills -->
             <div class="details-subgroup">
-              <h2 class="subgroup-title">SKILLS</h2>
-              <ul class="subgroup-content skills">
+              <h2 class="subgroup-title">LANGUAGES &amp; OUTILS</h2>
+              <ul class="subgroup-content text-and-icons-list">
                 <li>Cypress</li>
                 <li>JMeter</li>
                 <li>Swagger</li>
@@ -76,11 +85,9 @@
             </div>
             <!-- 3) Education -->
             <div class="details-subgroup">
-              <h2 class="subgroup-title">EDUCATION</h2>
+              <h2 class="subgroup-title">CERTIFICATIONS &amp; DIPLÔMES</h2>
               <div class="subgroup-content">
-                <p>
-                  ISTQB® Certified Tester Foundation Level 4.0 certification
-                </p>
+                <p>ISTQB® Certified Tester Foundation Level 4.0</p>
               </div>
             </div>
           </div>
@@ -93,7 +100,8 @@
             <div class="intro-content">
               <h1 class="name">Rony El Hourani</h1>
               <div class="line"></div>
-              <p class="profession">QA engineer</p>
+              <p class="profession">QA Engineer</p>
+              <p>Nouveau talent, certifié ISTQB®</p>
             </div>
           </div>
           <!-- RigthPanel details -->
