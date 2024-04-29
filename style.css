@@ -84,6 +84,10 @@ li {
   padding-bottom: 0.1cm;
   line-height: 1.5;
 }
+
+a {
+  text-decoration: none;
+}
 /* --------------------   COMPONENTS    --------------------------     */
 /* Component 1: text-and-icons-list */
 .text-and-icons-list {
@@ -239,4 +243,24 @@ li {
 
 .rightPanel .subgroup-title::after {
   border-bottom: 1px solid var(--rightPanel-h2-color);
+}
+
+.competences li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.competences .competence-first-sentence {
+  width: 60%;
+}
+
+.link {
+  color: var(--rightPanel-h2-color);
+  font-weight: 600;
+}
+
+.link-demonstration {
+  color: rgb(211, 211, 211);
+  font-weight: 600;
 }
