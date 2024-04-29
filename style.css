@@ -137,7 +137,6 @@ a {
 .position-and-date {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-bottom: 0.265cm;
 }
 
@@ -203,6 +202,16 @@ a {
   gap: 0.7cm;
 }
 
+.leftPanel .certifications {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2cm;
+}
+
+.leftPanel .certifications p {
+  text-align: justify;
+}
+
 /* Part 1 of details: Contact */
 .contactIcon {
   width: 0.5cm;
@@ -251,8 +260,8 @@ a {
 
 .competences li {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  column-gap: 0.53cm;
 }
 
 .competences .competence-first-sentence {
