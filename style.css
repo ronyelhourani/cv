@@ -124,13 +124,15 @@ a {
 
 /* Component 4: subgroup-content */
 .subgroup-content {
-  padding-top: 0.265cm;
-  padding-bottom: 0.529cm;
+  padding-top: 0.2cm;
+  padding-bottom: 0.2cm;
 }
 
 /* Component 5: details-list */
 .details-list {
-  padding-left: 0.265cm;
+  padding-left: 0.38cm;
+  list-style-type: disc;
+  margin: 0;
 }
 
 /* Component 6: position-and-date */
@@ -161,9 +163,9 @@ a {
 /* ----------------   LEFTPANEL   --------------------------       */
 /* Class leftPanel */
 .leftPanel {
-  width: 35%;
+  width: 32%;
   background-color: var(--leftPanel-bg-color);
-  padding: 0.7cm;
+  padding: 0.4cm;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,8 +200,8 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 0.7cm;
-  gap: 0.7cm;
+  padding-top: 0.3cm;
+  gap: 0.3cm;
 }
 
 .leftPanel .certifications {
@@ -220,18 +222,18 @@ a {
 /*    ------------------    RIGHTPANEL    ----------------------       */
 /* Class RightPanel */
 .rightPanel {
-  width: 65%;
-  padding: 0.7cm;
+  width: 67%;
+  padding: 0.4cm;
 }
 
 /* Part 1 of rightPanel: Intro-container */
 .intro-container {
-  padding-bottom: 0.529cm;
+  padding-bottom: 0.3cm;
 }
 
 .intro-content {
   background-color: var(--rightPanel-intro-bg-color);
-  padding: 0.529cm;
+  /* padding: 0.2cm; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -247,6 +249,7 @@ a {
 
 .profession {
   font-size: 0.7cm;
+  margin-top: 0.1cm;
 }
 
 /* Part 2 of rightPanel: Details */
